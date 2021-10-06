@@ -11,9 +11,18 @@ public class Clase14Sep {
         //Pila ven=new Pila();
         //ven.pilaEj();
         
-        PilaABC ven=new PilaABC();
-        ven.abece();
+        //PilaABC ven=new PilaABC();
+        //ven.abece();
         //Con estas lineas mandamos llamar a la clase y el metodo del código que queramos ejecutar.
+        
+        //PilaBB ven = new PilaBB();
+        //ven.PilaB();
+        
+        PilasTam ven = new PilasTam();
+        ven.union();
+        
+        //Pilab ven=new Pilab();
+        //ven.pilabbesita();
     }
     
 }
