@@ -15,7 +15,7 @@ public class PilasTam {
         int pilaA[]=new int[a];//con esto definimos que el dato que nos dio el usuario será el tamañano de la pila correspondiente.
         System.out.println("Tamaño de pila B");//En esta linea de codigo imprimimos la pregunta hacia el usuario.
         int b=sc.nextInt();//En esta linea guardamos el dato que haya introducido el usuario.
-        int pilaB[]=new int[b];//con esto definimos que el dato que nos dio el usuario será el tamañano de la pila correspondiente.
+        int pilaB[]=new int[a];//con esto definimos que el dato que nos dio el usuario será el tamañano de la pila correspondiente.
         
         if(a>=b){ //con este "if" indicamos que si el valor "a" ingresado por el usuario es mayor o igual 
             //al de "b".
