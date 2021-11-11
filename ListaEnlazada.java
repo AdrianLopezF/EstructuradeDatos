@@ -41,16 +41,29 @@ public class ListaEnlazada {
         }
     }
     
+    public static void eliminar(){
+        Nodo inicio=null;
+        Nodo otros;
+        if(inicio!=sig){
+            otros = inicio;
+            inicio = inicio.sig;
+            otros = null;
+        } else {
+            inicio = null;
+            sig = null;
+        }
+    }
+    
     public void ListaNodos(){
         ListaEnlazada R = new ListaEnlazada();
         Scanner esc=new Scanner(System.in);
         int opt=0;
         
-        
         do{
             System.out.println("\n1 mostrar"
             + "\n2 agregar"
-            + "\n3 salir");
+            + "\n3 eliminar"
+            + "\n4 salir");
             
             switch(opt=esc.nextInt()){
                 
@@ -61,8 +74,11 @@ public class ListaEnlazada {
                 case 2:
                     R.agregar();
                     break;
+                case 3:
+                    R.eliminar();
+                    break;
             }
             
-        }while(opt!=3);
+        }while(opt!=4);
     }
 }
